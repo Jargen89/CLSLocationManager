@@ -29,6 +29,7 @@
     // Do any additional setup after loading the view.
     locationManagerObject = [CLSLocationManager sharedInstance];
     [locationManagerObject startUpdatingLocation];
+    [locationManagerObject startUpdatingHeading];
 }
 
 - (void)didReceiveMemoryWarning

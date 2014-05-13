@@ -11,14 +11,15 @@
 
 @interface CLSLocationManager : NSObject <CLLocationManagerDelegate>
 {
-    CLLocationManager* locationManager;
+    //CLLocationManager* locationManager;
 }
-//@property (strong, atomic) CLLocationManager* locationManager;
+@property (strong, atomic) CLLocationManager* locationManager;
 
 + (CLSLocationManager*)sharedInstance;
 
 -(CLLocation*)currentLocation;
 -(void)startUpdatingLocation;
 -(void)stopUpdatingLocation;
-
+-(void)startUpdatingHeading;
+-(void)stopUpdatingHeading;
 @end
