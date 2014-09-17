@@ -17,9 +17,6 @@
 
 + (CLSLocationManager*)sharedInstance;
 
--(CLLocation*)currentLocation;
 -(void)startUpdatingLocation;
 -(void)stopUpdatingLocation;
--(void)startUpdatingHeading;
--(void)stopUpdatingHeading;
 @end

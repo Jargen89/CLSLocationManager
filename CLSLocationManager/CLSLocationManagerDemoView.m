@@ -50,7 +50,7 @@
 */
 
 - (IBAction)updateLocation:(id)sender {
-    CLLocation* location = [locationManagerObject currentLocation];
+    CLLocation* location = [locationManagerObject locationManager].location;
     _locationLabel.text = [NSString stringWithFormat:@"Lat:%f\nLong:%f",location.coordinate.latitude,location.coordinate.longitude,nil];
     [_locationLabel sizeToFit];
 }
